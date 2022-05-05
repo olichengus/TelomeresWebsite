@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 5, 15, 0.7),rgba(4,9,30,0.7)),url(/images/telomerebackdrop.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    list-style-type: none;
+    padding: 3px 13px;
+    position: relative;
+}
+.nav-links ul li{
+    display: inline;
+    line-height: normal;
+
+}
+    
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+} 
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: navajowhite;
+    font-size: 18px;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+}
+
+.nav-links ul li:hover ::after{
+    width: 100%; 
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 16px 34px;
+    font-size: 13px;
+    background: transparent; 
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{ 
+        padding: 30px;
+    }
+}
+
+/*-------course------*/
+
+.course{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color:white;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+
+/*-------- about us page -------*/
+
+.sub-header{
+    min-height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 5, 15, 0.7),rgba(4,9,30,0.7)),url(/images/telomerebackdrop.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sub-header h1{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.sub-header p{
+    width: 90%;
+    color:black;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    background-color: white;
+    text-indent: 3%;
+
+}
+
+/*------------ALT cancer--------*/
+
+.cancer-header{
+    min-height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 5, 15, 0.7),rgba(4,9,30,0.7)),url(/images/telomerebackdrop.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cancer-header h1{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.image {
+    position: relative;
+    box-sizing: 300px;
+    padding-top: 3px;
+    margin: auto;
+    align-self: center;
+    width: 100%;
+    
+}
+
+.son-image {
+    position: absolute;
+    top: 0;
+}
+
+.image__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.layer{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 28%;
+    height: 100%;
+    width: 45%;
+    background: rgba(0, 0, 0, 0.637);
+    color: white;
+    display: flex;
+    font-family: 'Quicksand' sans-serif;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.25s;
+    font-size: 40px;
+}
+
+.layer > * {
+    transform: translateY(30px);
+    transition: transform 0.25s;
+}
+
+.layer:hover > * {
+    transform: translateY(0);
+}
+
+.layer:hover{
+    opacity: 1;
+}
+
+.image__title{
+    color: rgb(127, 255, 53);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.desc{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 00.25em;
+    font-size: 30px;
+    white-space: pre-line;
+}
+
+.desc p{
+    position: relative;
+    color: rgb(127,255,53);
+    font-size: 30px;
+    text-align: center;
+} 
+
+.blog-content main_p{
+    margin-bottom: 0%;
+}
+
+
+.cancer-course{
+    align-self: left;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgba(197,137,91,255);
+    background-size: cover;
+    overflow-y: hidden;
+}
+.cancer-course h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.cancer-row{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.cancer-course-col{
+    flex-basis: 25%;
+    background: rgb(195, 211, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    row-gap: 50px;
+}
+
+.cancer-course-col p{
+    color:rgb(195, 211, 255);
+}
+
+.cancer-course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+
+.cancer-hide{
+    color: rgb(195, 211, 255);
+    transition: 0.5s;
+
+}
+
+.cancer-hide:hover{
+    color:#222;
+
+}
+
+.cancer-row2{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cancer-course-col2{
+    flex-basis: 25%;
+    background: rgb(195, 211, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {
+    .cancer-row{
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    
+    .cancer-course-col{
+        flex-basis: 25%;
+        background: rgb(195, 211, 255);
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        row-gap: 50px;
+        font-size: 12px;
+        
+    }
+
+    .cancer-hide{
+        font-size: 12px;
+        color: rgb(195, 211, 255);
+        transition: 0.5s;
+    
+    }
+ }
+
+@media screen and (min-width: 1920px) and (max-width: 2300px) {
+    .cancer-row {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    
+    .cancer-course-col{
+        flex-basis: 25%;
+        background: rgb(195, 211, 255);
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        row-gap: 50px;
+        font-size: smaller;
+        
+    }
+
+    .cancer-hide{
+        font-size: 8px;
+        color: rgb(195, 211, 255);
+        transition: 0.5s;
+    
+    }
+}
+
+.exp{
+    position: relative;
+    padding-top: 10px;
+    border: 5px solid;
+    width: 100%;
+    background-color: rgb(213, 255, 255);
+}
+
+
+
+.references{
+    position: absolute;
+    background-color:rgba(248, 213, 213, 0.9);
+    width: 100%;
+    margin: auto;
+    padding: 60px 5;
+}
+
+.references h1{
+    text-align: center;
+}
+
+.linklists {
+    margin-left: 50px;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.linklists ol{
+    margin-left: 50px;
+    color: black;
+    font-size: 15px;    
+    
+}
+
+.diagram-ref{
+    border: 15px black;
+    
+}
+
+
+
+
+
+
+/*----------blog-content------*/
+
+
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 5;
+}
+
+.blog-content p{
+    margin-bottom: 0;
+}
+
+.blog-left{
+    flex-basis: 50%;
+    align-content: center;
+}
+
+.blog-left img{
+    top: 12%;
+    width: 40%;
+    height: 40%;
+    align-content: center;
+    border-color: black;
+    padding-top: 3%;
+}
+
+.blog-left h1{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: center;
+}
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: left;
+    text-indent: 3%;
+    text-decoration: underline;
+}
+.blog-left h4{
+    font-weight: 1000;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+.blog-left p{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    font-size: large;
+    text-indent: 3%;
+    line-height: 1.9;
+    padding-bottom: 0;;
+    text-align: left;
+}
+
+.second-image img{
+    padding-top: 0%;
+}
+
+
+
+#showcase {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+
+
+.alt-text{
+    margin: 5% auto;
+    padding: 2% 5%;
+    width: 90%;
+    overflow: auto;
+    background-color: rgba(248, 213, 213, 0.9);
+    border-radius: 5px;
+}
+
+
+
+/*----------TERT--------*/
+
+.tert-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 5, 15, 0.7),rgba(4,9,30,0.7)),url(/images/telomerebackdrop.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.tert-header h1{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.tert-header h4{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+
+
+}
+.tert-header p{
+    width: 90%;
+    color:black;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    background-color: white;
+    text-indent: 3%;
+    line-height: 10;
+
+}

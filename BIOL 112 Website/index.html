@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial scale = 1.0">
+    <title>Telomeres</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/download.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="about.html">INTRO</a></li>
+                    <li><a href="tert.html">TERT</a></li>
+                    <li><a href="cancer.html">CANCER & ALT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>
+            Telomeres maintenance mechanism and cancer
+        </h1>
+        <p>
+            An often overlooked component of nucleic acids. 
+        </p>
+        <a href="about.html" class="hero-btn">What are Telomeres?</a>
+        <a href="tert.html" class="hero-btn">The TERT gene</a>
+        <a href="cancer.html" class="hero-btn">Cancer and ALT</a>
+    </div>
+    
+    </section>
+
+
+<!-------- Course Page-->
+    <section class="course">
+        <h1>Our Team</h1>
+        <p>Oliver Cheng, Pearl Park, Michaela Monstrenko, Alex Vienneau.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>About us</h3>
+                <p>
+                    We are a group University of British Columbia Science students majoring in various subjects. What brought this website to life was our desire to share what we learned in Biology by using all of our unique skills.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Mission Statement</h3>
+                <p>
+                    Our goal for this website was to provide free and easily accesible information on Telomeres and its function within the human body. Although some terms may be foreign to viewers, we hope our diagrams and explanations can simplify complex scientific subjects.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Contact</h3>
+                <p>
+                    You can contact us on anything Telomere or science related at oliverjcheng@gmail.com and GitHub OliChengus for future projects!
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!--------JavaScript For Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+             navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+    
+</body>
+</html>
+
